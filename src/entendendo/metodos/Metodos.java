@@ -4,7 +4,7 @@ package entendendo.metodos;
  *Classe principal para o exercicio da Aula 1 de métodos.
  */
 
-public class Main {
+public class Metodos {
 
     public static void main(String[] args){
 
@@ -28,5 +28,25 @@ public class Main {
         emprestimo.calcular(1000, emprestimo.getTresParcelas());
         emprestimo.calcular(1000, 5);
 
+        //Quadrilátero
+        /**
+        System.out.println("Exercício quadrilátero");
+        Quadrilatero.area(3);
+        Quadrilatero.area(4,5);
+        Quadrilatero.area(5,7,9);
+        Quadrilatero.area(3f,7f);
+        */
+
+        //Retornoss
+        System.out.println("Exercício retornos");
+
+        double areaQuadrado = Quadrilatero.area(3);
+        System.out.println("Área do quadrado: " + areaQuadrado);
+
+        double areaRetangulo = Quadrilatero.area(3,5);
+        System.out.println("Área do retângulo: " + areaRetangulo);
+
+        double areaTrapezio = Quadrilatero.area(4, 5, 6);
+        System.out.println("Área do trapézio: " + areaTrapezio);
     }
 }
